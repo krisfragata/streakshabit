@@ -1,0 +1,37 @@
+$mainPurple: #463C6F;
+$sunset: #f5bd89;
+$accentPurple: #D7D0F1;
+
+@mixin rectangle($width, $height, $color, $justify){
+    width: $width;
+    height: $height;
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+    background-color: $color;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $mainPurple;
+}
+
+h1{
+    color: white;
+}
+
+.container{
+    @include rectangle(50%, 50%, $sunset, left);
+    position: absolute;
+    border-radius: 21px 21px 21px 21px;
+    box-shadow: 13px 13px 2px 2px #30294b;
+    // left: 20%;
+    // top: 20%;
+}
+
+.left{
+    @include rectangle(40%, 100%, $accentPurple, left);
+    border-radius: 21px 0px 0px 21px;
+}
+

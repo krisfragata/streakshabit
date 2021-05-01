@@ -1,0 +1,47 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #463C6F;
+}
+
+h1 {
+  color: white;
+}
+
+.container {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-color: #f5bd89;
+  position: absolute;
+  border-radius: 21px 21px 21px 21px;
+  -webkit-box-shadow: 13px 13px 2px 2px #30294b;
+          box-shadow: 13px 13px 2px 2px #30294b;
+}
+
+.left {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-color: #D7D0F1;
+  border-radius: 21px 0px 0px 21px;
+}
+/*# sourceMappingURL=style.css.map */
