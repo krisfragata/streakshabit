@@ -3,6 +3,7 @@ $sunset: #f5bd89;
 $accentPurple: #D7D0F1;
 $titleOrange: #DAA270;
 $textAccPurple: #A195D6;
+$promptVal: #FBF3E5;
 
 // font imports
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
@@ -25,11 +26,36 @@ body{
 }
 
 
+
+// containers and whatnot
 .container{
     @include rectangle(50%, 50%, $sunset, row, left);
     position: absolute;
     border-radius: 21px 21px 21px 21px;
     box-shadow: 13px 13px 2px 2px #30294b;
+    .right{
+        flex-direction: column;
+        h2{
+            font-size: 40;
+            font-family: Signica, sans-serif;
+            color: $mainPurple;
+        } 
+        input{
+            background-color: $sunset;
+            border-width: thin;
+            border-color: $mainPurple;
+            color: $promptVal;
+            border-radius: 11px 11px 11px 11px;
+            width: 10rem;
+            // text-color: $textAccPurple;
+            #loginBtn{
+             border-width: medium;
+             color: $mainPurple;
+            }
+            
+        } 
+              
+    }
     // left: 20%;
     // top: 20%;
 }
@@ -38,17 +64,22 @@ body{
     @include rectangle(40%, 100%, $accentPurple, column, left);
     border-radius: 21px 0px 0px 21px;
     .box{
+        // flex-direction: row;
+        margin: 3rem;
+        height: 20%;
+        justify-content: center;
         h1{
         font-size: 15px;
         color: $mainPurple;
         font-family: Sancreek;
         }
-        h2{
+        h3{
             font-size: 55px;
             color: $titleOrange;
             font-family: Signica, sans-serif;
         }
         h4{
+            font-size: 12px;
             color: $textAccPurple;
             font-family: Signica, sans-serif;}
         }
