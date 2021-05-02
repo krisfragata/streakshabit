@@ -1,6 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sancreek&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap");
+input {
+  background-color: #f5bd89;
+  border-width: thin;
+  border-color: #463C6F;
+  color: #FBF3E5;
+  border-radius: 11px 11px 11px 11px;
+  width: 10rem;
+}
+
+#loginBtn {
+  border-width: medium;
+  color: #463C6F;
+}
+
+#signupBtn {
+  border-width: medium;
+  background-color: #463C6F;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -37,20 +56,6 @@ body {
 .container .right h2 {
   font-size: 40;
   font-family: Signica, sans-serif;
-  color: #463C6F;
-}
-
-.container .right input {
-  background-color: #f5bd89;
-  border-width: thin;
-  border-color: #463C6F;
-  color: #FBF3E5;
-  border-radius: 11px 11px 11px 11px;
-  width: 10rem;
-}
-
-.container .right input #loginBtn {
-  border-width: medium;
   color: #463C6F;
 }
 

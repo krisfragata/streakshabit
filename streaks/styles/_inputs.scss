@@ -1,0 +1,22 @@
+input{
+    background-color: $sunset;
+    border-width: thin;
+    border-color: $mainPurple;
+    color: $promptVal;
+    border-radius: 11px 11px 11px 11px;
+    width: 10rem;
+    // text-color: $textAccPurple;
+  
+    
+} 
+
+#loginBtn{
+    border-width: medium;
+    color: $mainPurple;
+    // border-color: $mainPurple;
+   }
+
+#signupBtn{
+    border-width: medium;
+    background-color: $mainPurple;
+}

@@ -5,6 +5,9 @@ $titleOrange: #DAA270;
 $textAccPurple: #A195D6;
 $promptVal: #FBF3E5;
 
+// file extension imports
+@import './inputs';
+
 // font imports
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
@@ -40,25 +43,12 @@ body{
             font-family: Signica, sans-serif;
             color: $mainPurple;
         } 
-        input{
-            background-color: $sunset;
-            border-width: thin;
-            border-color: $mainPurple;
-            color: $promptVal;
-            border-radius: 11px 11px 11px 11px;
-            width: 10rem;
-            // text-color: $textAccPurple;
-            #loginBtn{
-             border-width: medium;
-             color: $mainPurple;
-            }
-            
-        } 
               
     }
     // left: 20%;
     // top: 20%;
 }
+
 
 .left{
     @include rectangle(40%, 100%, $accentPurple, column, left);
