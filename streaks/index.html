@@ -11,27 +11,30 @@
 
 
 <body>
-    <div class=container>
+    <div class="container">
       <div class="left">
       <div class="box">
         <h1>Accountable</h1>
         <h3>Daily Habit Tracker</h3>
-        <h4>Powered by node.js</h4>
+        <!-- <h4>Powered by node.js</h4> -->
       </div>
       </div>
       <div class="right">
-        <h2>Log in or Sign up</h2>
-        <div class =signUpContainer>
+        <div class="signUpContainer">
+          <h2>Log in or Sign up</h2>
+          <div class="hidden" id="noRecords">
+            <p>This email doesn't have an account.</p>
+            <u>Sign up</u>
+            <p>now?</p>
+          </div>
           <form>
-            <input type="text" value="Your e-mail address">
+            <input type="text" onfocus="this.value=''" value="Your e-mail address">
             <!-- <input type="text" value="your password"> -->
-            <input class="button" id="loginBtn" type="submit" value="Log in">
-            <input class="button signup" id="signupBtn" type="submit" value="Sign up">
+            <input class="button" id="next" type="submit" value="Next">
+            <!-- <input class="button signup" id="signupBtn" type="submit" value="Sign up"> -->
           </form>
         </div>
       </div>
-      
-
     </div>
 
 

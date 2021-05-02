@@ -1,22 +1,66 @@
-input{
-    background-color: $sunset;
-    border-width: thin;
-    border-color: $mainPurple;
-    color: $promptVal;
-    border-radius: 11px 11px 11px 11px;
-    width: 10rem;
-    // text-color: $textAccPurple;
-  
-    
-} 
+// variables
+$popUp: #C4C4C4;
 
-#loginBtn{
-    border-width: medium;
-    color: $mainPurple;
-    // border-color: $mainPurple;
-   }
-
-#signupBtn{
-    border-width: medium;
-    background-color: $mainPurple;
+// mixin functions
+@mixin rectangle($width, $height, $color, $direction, $justify){
+    width: $width;
+    height: $height;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    background-color: $color;
 }
+
+@mixin hoverPoint{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+
+.signUpContainer{
+    margin: 5rem;
+    margin-left: 88px;
+    padding: 4rem;
+
+    h2{
+        padding-top: -2rem;
+        padding-bottom: 2rem;
+    }
+
+
+    input{
+        background-color: $sunset;
+        border-width: thin;
+        border-color: $mainPurple;
+        color: $promptVal;
+        border-radius: 11px 11px 11px 11px;
+        width: 70%;
+        // text-color: $textAccPurple;
+      
+        
+    } 
+    
+    
+    
+    #next{
+        border-width: medium;
+        background-color: $mainPurple;
+        @include hoverPoint();
+    }
+
+    // popup when email doesn't register
+    #norecords{
+        @include rectangle(300px, 40px, $popUp,row,center);
+        margin: 3rem;
+    }
+    // hides elements
+    .hidden{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    
+}
+
