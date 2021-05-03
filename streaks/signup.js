@@ -3,6 +3,8 @@ $(document).ready(()=>{
     const signup = document.querySelector("#signup");
     const input = document.querySelector('#user-email');
     const  password = document.querySelector("#password");
+    const choose = document.querySelector('#choose');
+    const name = document.querySelector('#name');
     
 
     // selects the title to go back home
@@ -24,6 +26,8 @@ $(document).ready(()=>{
         e.preventDefault();
         isEmail();
         passwordCheck();
+        checkChoose();
+        checkName();
         // if(!emailCheck()){
         //     e.preventDefault();
         //     $("#noRecords").removeClass('hidden');
@@ -60,6 +64,27 @@ $(document).ready(()=>{
         }
         else{
             $('#weakPass').addClass('hidden');
+        }
+    }
+
+    // checks if a pet or plant is chosen
+    function checkChoose(){
+        if($("input[type=radio]:checked").length > 0) {
+            $("#choose").addClass('hidden');  
+        }
+        else{
+            $("#choose").removeClass('hidden');  
+        }
+    }
+
+    // checks if there is a nae typed in the "name" input
+    function checkName(){
+        let value = name.value;
+        if($('#name').length && $('#name').val().length){
+            $('#name-alert').removeClass('hidden');
+        }
+        else{
+            $('#name-alert').addClass('hidden');
         }
     }
 });

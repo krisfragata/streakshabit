@@ -32,6 +32,18 @@ $popUp:"rgba(196, 196, 196, 0.2)";
     background-color: $color;
 }
 
+@mixin popup{
+    // width: 100%;
+    // height: 100%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $popUp;
+    font-family: $smallText;
+    font-size: 10px;
+}
+
 body{
     width: 100vw;
     height: 100vh;
@@ -54,10 +66,8 @@ body{
             font-family: $smallText, sans-serif;
             color: $mainPurple;
         } 
-
-        #weakPass{
-            @include rectangle(70%, 15%, $popUp, column, center);
-            font-size: 10px;
+        .popup{
+            @include popup();
         }
               
     }

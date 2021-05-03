@@ -20,16 +20,22 @@
           <div class="right">
             <div class="signUpContainer">
               <h5>Create an account</h5>
-              <div class="hidden" id="notEmail">
+              <div class="popup hidden" id="notEmail">
                 <p>please enter a valid email address</p>
               </div>
-              <div class="hidden" id="weakPass">
+              <div class="popup hidden" id="weakPass">
                     <p>Password must be at least 8 characters long and contain all of the following:</p>
                     <ul>
                         <li>Uppercase characters (A-Z)</li>
                         <li>Digits (0-9)</li>
                         <li>Special characters(~!@#$%^&*_-+=`|\(){}[]:;"'>,.?/)</li>
                     </ul>
+              </div>
+              <div class="popup hidden" id="choose">
+                  <p>You must choose a pet or plant!</p>
+              </div>
+              <div class="popup hidden" id="name-alert">
+                  <p>please name your pet/plant!</p>
               </div>
               <form >
                 <input type="email" id="user-email" onfocus="this.value=''" value="Your e-mail address" required>
@@ -39,7 +45,7 @@
                 <label for="pet">Pet</label>
                 <input type="radio" name="toOwn" value="plant">
                 <label for="pet">Plant</label>
-                <input type="text" onfocus="this.value=''" value="Pet/Plant name" required>
+                <input type="text" id="name" onfocus="this.value=''" value="Pet/Plant name" required>
                 <input class="button" id="signup" type="submit" value="signup">
               </form>
             </div>
