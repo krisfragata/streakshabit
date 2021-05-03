@@ -13,7 +13,7 @@
           <div class="left">
           <div class="box">
             <h1>Accountable</h1>
-            <h3>Daily Habit Tracker</h3>
+            <h3 class="home">Daily Habit Tracker</h3>
             <!-- <h4>Powered by node.js</h4> -->
           </div>
           </div>
@@ -23,9 +23,17 @@
               <div class="hidden" id="notEmail">
                 <p>please enter a valid email address</p>
               </div>
+              <div class="hidden" id="weakPass">
+                    <p>Password must be at least 8 characters long and contain all of the following:</p>
+                    <ul>
+                        <li>Uppercase characters (A-Z)</li>
+                        <li>Digits (0-9)</li>
+                        <li>Special characters(~!@#$%^&*_-+=`|\(){}[]:;"'>,.?/)</li>
+                    </ul>
+              </div>
               <form >
                 <input type="email" id="user-email" onfocus="this.value=''" value="Your e-mail address" required>
-                <input type="text" onfocus="this.value=''" value="Password" required>
+                <input type="password" id="password" onfocus="this.value=''" value="Password" required>
                 <h2>I will raise a:</h1>
                 <input type="radio" name="toOwn" value="pet">
                 <label for="pet">Pet</label>

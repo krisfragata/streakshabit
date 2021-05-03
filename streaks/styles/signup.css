@@ -109,6 +109,23 @@ body {
   color: #463C6F;
 }
 
+.container .right #weakPass {
+  width: 70%;
+  height: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #C4C4C4;
+  font-size: 10px;
+}
+
 .left {
   width: 33%;
   height: 100%;

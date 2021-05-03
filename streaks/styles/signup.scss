@@ -13,6 +13,8 @@ $textAccPurple: #A195D6;
 $promptVal: #FBF3E5;
 $mainFont: "Press Start 2p";
 $smallText: "Ubuntu";
+$popUp:"rgba(196, 196, 196, 0.2)";
+
 
 // file extension imports
 @import './signupInputs';
@@ -52,6 +54,11 @@ body{
             font-family: $smallText, sans-serif;
             color: $mainPurple;
         } 
+
+        #weakPass{
+            @include rectangle(70%, 15%, $popUp, column, center);
+            font-size: 10px;
+        }
               
     }
     // left: 20%;

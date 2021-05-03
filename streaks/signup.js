@@ -1,7 +1,12 @@
 $(document).ready(()=>{
     // calling elements from html
     const signup = document.querySelector("#signup");
-    const input = document.querySelector('#user-email')
+    const input = document.querySelector('#user-email');
+    const  password = document.querySelector("#password");
+    
+
+    // selects the title to go back home
+    // $(".home").click(window.location.href="index.html" )
 
     // Execute a function when the user releases a key on the keyboard
     input.addEventListener("keyup", function(e) {
@@ -17,7 +22,8 @@ $(document).ready(()=>{
     // when signup button is clicked, check if it is a valid email,
     signup.addEventListener('click', (e)=>{
         e.preventDefault();
-        if(!isEmail()){return};
+        isEmail();
+        passwordCheck();
         // if(!emailCheck()){
         //     e.preventDefault();
         //     $("#noRecords").removeClass('hidden');
@@ -44,5 +50,16 @@ $(document).ready(()=>{
     // function to check if email is in registry
     function emailCheck(){
         return false;
+    }
+
+    // password checks
+    function passwordCheck(){
+        const passRqmt = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+        if(!(password.value.match(passRqmt))){
+            $("#weakPass").removeClass('hidden');
+        }
+        else{
+            $('#weakPass').addClass('hidden');
+        }
     }
 });
