@@ -29,16 +29,16 @@
   width: 70%;
 }
 
-.signUpContainer #next {
+.signUpContainer #signup {
   border-width: medium;
   background-color: #463C6F;
 }
 
-.signUpContainer #next:hover {
+.signUpContainer #signup:hover {
   cursor: pointer;
 }
 
-.signUpContainer #notEmail, .signUpContainer #norecords {
+.signUpContainer #notEmail {
   width: 300px;
   height: 40px;
   display: -webkit-box;
@@ -55,19 +55,11 @@
   margin: 3rem;
 }
 
-.signUpContainer #notEmail p, .signUpContainer #norecords p {
+.signUpContainer #notEmail p {
   font-size: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.signUpContainer #norecords a {
-  font-size: 10px;
-}
-
-.signUpContainer #norecords a:hover {
-  cursor: pointer;
 }
 
 .signUpContainer .hidden {
@@ -156,4 +148,4 @@ body {
   font-family: "Press Start 2p", sans-serif;
   margin: 2px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=signup.css.map */

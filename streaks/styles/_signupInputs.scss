@@ -48,13 +48,10 @@ $popUp: #C4C4C4;
         border-radius: 11px 11px 11px 11px;
         width: 70%;
         // text-color: $textAccPurple;
-      
-        
     } 
     
     
-    
-    #next{
+    #signup{
         border-width: medium;
         background-color: $mainPurple;
         @include hoverPoint();
@@ -72,14 +69,7 @@ $popUp: #C4C4C4;
 
     }
 
-    // popup when email doesn't register
-    #norecords{
-        @extend #notEmail;
-        a{
-            font-size: 10px;
-            @include hoverPoint();
-        }
-    }
+   
     // hides elements
     .hidden{
         visibility: hidden;

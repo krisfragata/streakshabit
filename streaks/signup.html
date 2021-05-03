@@ -1,0 +1,38 @@
+<html>
+    <!-- link stylesheets  -->
+    <link rel="stylesheet" href="./styles/signup.css">
+
+    <!-- linking scripts -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="signup.js" ></script>
+
+    <title>sgnup</title>
+
+    <body>
+        <div class="container">
+          <div class="left">
+          <div class="box">
+            <h1>Accountable</h1>
+            <h3>Daily Habit Tracker</h3>
+            <!-- <h4>Powered by node.js</h4> -->
+          </div>
+          </div>
+          <div class="right">
+            <div class="signUpContainer">
+              <h5>Create an account</h5>
+              <div class="hidden" id="notEmail">
+                <p>please enter a valid email address</p>
+              </div>
+              <form >
+                <input type="email" id="user-email" onfocus="this.value=''" value="Your e-mail address">
+                <!-- <input type="text" value="your password"> -->
+                <input class="button" id="signup" type="submit" value="signup">
+              </form>
+            </div>
+          </div>
+        </div>
+    
+    
+    </body>
+
+</html>

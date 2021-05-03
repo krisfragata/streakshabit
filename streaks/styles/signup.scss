@@ -1,0 +1,88 @@
+// font imports
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+$mainPurple: #463C6F;
+$sunset: #f5bd89;
+$accentPurple: #D7D0F1;
+$titleOrange: #DAA270;
+$textAccPurple: #A195D6;
+$promptVal: #FBF3E5;
+$mainFont: "Press Start 2p";
+$smallText: "Ubuntu";
+
+// file extension imports
+@import './signupInputs';
+
+
+
+// font variables
+
+@mixin rectangle($width, $height, $color, $direction, $justify){
+    width: $width;
+    height: $height;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    background-color: $color;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: $mainPurple;
+}
+
+
+
+// containers and whatnot
+.container{
+    @include rectangle(967px, 547px, $sunset, row, left);
+    position: absolute;
+    border-radius: 21px 21px 21px 56px;
+    box-shadow: 13px 13px 2px 2px #30294b;
+    place-items: center;
+    .right{
+        flex-direction: column;
+        h2{
+            font-size: 40;
+            font-family: Signica, sans-serif;
+            color: $mainPurple;
+        } 
+              
+    }
+    // left: 20%;
+    // top: 20%;
+}
+
+
+.left{
+    @include rectangle(33%, 100%, $accentPurple, column, left);
+    border-radius: 0px 0px 0px 56px;
+    .box{
+        top: 50%;
+        margin: 3rem;
+        padding-top: 5rem;
+        height: 40%;
+        justify-content: center;
+        h1{
+        font-size: 15px;
+        color: $mainPurple;
+        font-family: $smallText;
+        }
+        h3{
+            font-size: 35px;
+            color: $titleOrange;
+            font-family: $mainFont, sans-serif;
+            margin: 2px;
+        }
+        // h4{
+        //     font-size: 12px;
+        //     color: $textAccPurple;
+        //     font-family: Signica, sans-serif;
+            // }
+        }
+}
