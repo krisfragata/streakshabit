@@ -6,7 +6,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
     <script src="signup.js" ></script>
 
-    <title>sgnup</title>
+    <title>signup</title>
 
     <body>
         <div class="container">
@@ -24,8 +24,14 @@
                 <p>please enter a valid email address</p>
               </div>
               <form >
-                <input type="email" id="user-email" onfocus="this.value=''" value="Your e-mail address">
-                <!-- <input type="text" value="your password"> -->
+                <input type="email" id="user-email" onfocus="this.value=''" value="Your e-mail address" required>
+                <input type="text" onfocus="this.value=''" value="Password" required>
+                <h2>I will raise a:</h1>
+                <input type="radio" name="toOwn" value="pet">
+                <label for="pet">Pet</label>
+                <input type="radio" name="toOwn" value="plant">
+                <label for="pet">Plant</label>
+                <input type="text" onfocus="this.value=''" value="Pet/Plant name" required>
                 <input class="button" id="signup" type="submit" value="signup">
               </form>
             </div>

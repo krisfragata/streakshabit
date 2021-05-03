@@ -47,12 +47,17 @@ $popUp: #C4C4C4;
         color: $promptVal;
         border-radius: 11px 11px 11px 11px;
         width: 70%;
+        
         // text-color: $textAccPurple;
       
         
     } 
     
-    
+    label{
+        font-family: $smallText;
+        font-size: 10px;
+        color: $mainPurple;
+    }
     
     #next{
         border-width: medium;

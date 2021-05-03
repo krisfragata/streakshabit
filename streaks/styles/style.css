@@ -29,6 +29,12 @@
   width: 70%;
 }
 
+.signUpContainer label {
+  font-family: "Ubuntu";
+  font-size: 10px;
+  color: #463C6F;
+}
+
 .signUpContainer #next {
   border-width: medium;
   background-color: #463C6F;
