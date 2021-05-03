@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 $mainPurple: #463C6F;
 $sunset: #f5bd89;
@@ -11,6 +12,7 @@ $titleOrange: #DAA270;
 $textAccPurple: #A195D6;
 $promptVal: #FBF3E5;
 $mainFont: "Press Start 2p";
+$smallText: "Ubuntu";
 
 // file extension imports
 @import './inputs';
@@ -69,7 +71,7 @@ body{
         h1{
         font-size: 15px;
         color: $mainPurple;
-        font-family: Sancreek;
+        font-family: $smallText;
         }
         h3{
             font-size: 35px;

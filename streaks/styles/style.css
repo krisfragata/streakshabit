@@ -2,22 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Sancreek&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 .signUpContainer {
   margin: 5rem;
   margin-left: 88px;
   padding: 4rem;
-  font-family: "Press Start 2p";
+  font-family: "Ubuntu";
 }
 
 .signUpContainer h5 {
   color: #463C6F;
   font-family: "Press Start 2p";
+  font-size: 20px;
   padding-top: -2rem;
   padding-bottom: 2rem;
 }
 
 .signUpContainer input {
-  font-family: "Press Start 2p";
+  font-family: "Ubuntu";
   font-size: 10px;
   background-color: #f5bd89;
   border-width: thin;
@@ -36,7 +38,7 @@
   cursor: pointer;
 }
 
-.signUpContainer #norecords {
+.signUpContainer #notEmail, .signUpContainer #norecords {
   width: 300px;
   height: 40px;
   display: -webkit-box;
@@ -53,12 +55,19 @@
   margin: 3rem;
 }
 
-.signUpContainer #norecords p {
+.signUpContainer #notEmail p, .signUpContainer #norecords p {
   font-size: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .signUpContainer #norecords u {
   font-size: 10px;
+}
+
+.signUpContainer #norecords u:hover {
+  cursor: pointer;
 }
 
 .signUpContainer .hidden {
@@ -138,7 +147,7 @@ body {
 .left .box h1 {
   font-size: 15px;
   color: #463C6F;
-  font-family: Sancreek;
+  font-family: "Ubuntu";
 }
 
 .left .box h3 {

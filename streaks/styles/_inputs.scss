@@ -28,17 +28,18 @@ $popUp: #C4C4C4;
     margin: 5rem;
     margin-left: 88px;
     padding: 4rem;
-    font-family: $mainFont;
+    font-family: $smallText;
     h5{
         color: $mainPurple;
         font-family: $mainFont;
+        font-size: 20px;
         padding-top: -2rem;
         padding-bottom: 2rem;
     }
 
 
     input{
-        font-family: $mainFont;
+        font-family: $smallText;
         font-size: 10px;
         background-color: $sunset;
         border-width: thin;
@@ -59,15 +60,24 @@ $popUp: #C4C4C4;
         @include hoverPoint();
     }
 
-    // popup when email doesn't register
-    #norecords{
+    // popup for inputting an invalid email address
+    #notEmail{
         @include rectangle(300px, 40px, $popUp,row,center);
         margin: 3rem;
         p{
             font-size: 10px;
+            align-items: center;
         }
+       
+
+    }
+
+    // popup when email doesn't register
+    #norecords{
+        @extend #notEmail;
         u{
             font-size: 10px;
+            @include hoverPoint();
         }
     }
     // hides elements
