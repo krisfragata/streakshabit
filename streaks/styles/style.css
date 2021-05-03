@@ -1,18 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sancreek&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 .signUpContainer {
   margin: 5rem;
   margin-left: 88px;
   padding: 4rem;
+  font-family: "Press Start 2p";
 }
 
-.signUpContainer h2 {
+.signUpContainer h5 {
+  color: #463C6F;
+  font-family: "Press Start 2p";
   padding-top: -2rem;
   padding-bottom: 2rem;
 }
 
 .signUpContainer input {
+  font-family: "Press Start 2p";
+  font-size: 10px;
   background-color: #f5bd89;
   border-width: thin;
   border-color: #463C6F;
@@ -45,6 +51,14 @@
           justify-content: center;
   background-color: #C4C4C4;
   margin: 3rem;
+}
+
+.signUpContainer #norecords p {
+  font-size: 10px;
+}
+
+.signUpContainer #norecords u {
+  font-size: 10px;
 }
 
 .signUpContainer .hidden {
@@ -113,7 +127,7 @@ body {
 
 .left .box {
   top: 50%;
-  margin: 4rem;
+  margin: 3rem;
   padding-top: 5rem;
   height: 40%;
   -webkit-box-pack: center;
@@ -128,9 +142,9 @@ body {
 }
 
 .left .box h3 {
-  font-size: 55px;
+  font-size: 35px;
   color: #DAA270;
-  font-family: Signica, sans-serif;
+  font-family: "Press Start 2p", sans-serif;
   margin: 2px;
 }
 /*# sourceMappingURL=style.css.map */

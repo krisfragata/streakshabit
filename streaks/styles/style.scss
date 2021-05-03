@@ -1,17 +1,23 @@
+// font imports
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 $mainPurple: #463C6F;
 $sunset: #f5bd89;
 $accentPurple: #D7D0F1;
 $titleOrange: #DAA270;
 $textAccPurple: #A195D6;
 $promptVal: #FBF3E5;
+$mainFont: "Press Start 2p";
 
 // file extension imports
 @import './inputs';
 
-// font imports
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap');
+
+
+// font variables
 
 @mixin rectangle($width, $height, $color, $direction, $justify){
     width: $width;
@@ -56,7 +62,7 @@ body{
     border-radius: 0px 0px 0px 56px;
     .box{
         top: 50%;
-        margin: 4rem;
+        margin: 3rem;
         padding-top: 5rem;
         height: 40%;
         justify-content: center;
@@ -66,9 +72,9 @@ body{
         font-family: Sancreek;
         }
         h3{
-            font-size: 55px;
+            font-size: 35px;
             color: $titleOrange;
-            font-family: Signica, sans-serif;
+            font-family: $mainFont, sans-serif;
             margin: 2px;
         }
         // h4{

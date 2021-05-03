@@ -1,6 +1,12 @@
 // variables
 $popUp: #C4C4C4;
 
+// font import
+// @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+// variable names
+// $mainFont: "Press Start 2p";
+
 // mixin functions
 @mixin rectangle($width, $height, $color, $direction, $justify){
     width: $width;
@@ -22,14 +28,18 @@ $popUp: #C4C4C4;
     margin: 5rem;
     margin-left: 88px;
     padding: 4rem;
-
-    h2{
+    font-family: $mainFont;
+    h5{
+        color: $mainPurple;
+        font-family: $mainFont;
         padding-top: -2rem;
         padding-bottom: 2rem;
     }
 
 
     input{
+        font-family: $mainFont;
+        font-size: 10px;
         background-color: $sunset;
         border-width: thin;
         border-color: $mainPurple;
@@ -53,6 +63,12 @@ $popUp: #C4C4C4;
     #norecords{
         @include rectangle(300px, 40px, $popUp,row,center);
         margin: 3rem;
+        p{
+            font-size: 10px;
+        }
+        u{
+            font-size: 10px;
+        }
     }
     // hides elements
     .hidden{
