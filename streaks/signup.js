@@ -8,7 +8,7 @@ $(document).ready(()=>{
     
 
     // selects the title to go back home
-    // $(".home").click(window.location.href="index.html" )
+    // $(".left-box").onclick(window.location="index.html" )
 
     // Execute a function when the user releases a key on the keyboard
     input.addEventListener("keyup", function(e) {
@@ -80,7 +80,7 @@ $(document).ready(()=>{
     // checks if there is a nae typed in the "name" input
     function checkName(){
         let value = name.value;
-        if($('#name').length && $('#name').val().length){
+       if(name.value == ""){
             $('#name-alert').removeClass('hidden');
         }
         else{

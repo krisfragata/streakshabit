@@ -64,26 +64,26 @@
         @include hoverPoint();
     }
 
-    // popup for inputting an invalid email address
-    #notEmail{
-        @include rectangle(300px, 40px, $popUp,row,center);
-        margin: 3rem;
-        p{
-            font-size: 10px;
-            align-items: center;
-        }
+    // // popup for inputting an invalid email address
+    // #notEmail{
+    //     @include rectangle(300px, 40px, $popUp,row,center);
+    //     margin: 3rem;
+    //     p{
+    //         font-size: 10px;
+    //         align-items: center;
+    //     }
        
 
-    }
+    // }
 
-    // popup when email doesn't register
-    #norecords{
-        @extend #notEmail;
-        a{
-            font-size: 10px;
-            @include hoverPoint();
-        }
-    }
+    // // popup when email doesn't register
+    // #norecords{
+    //     @extend #notEmail;
+    //     a{
+    //         font-size: 10px;
+    //         @include hoverPoint();
+    //     }
+    // }
     // hides elements
     .hidden{
         visibility: hidden;
