@@ -3,8 +3,9 @@ $(document).ready(()=>{
     const signup = document.querySelector("#signup");
     const input = document.querySelector('#user-email');
     const  password = document.querySelector("#password");
-    const chosen = document.getElementById('reg-form');
+    const chosen = document.getElementsByName('charge');
     const name = document.querySelector('#name');
+    
     
 
     // selects the title to go back home
@@ -28,6 +29,7 @@ $(document).ready(()=>{
         passwordCheck();
         checkChoose();
         checkName();
+
         // if(!emailCheck()){
         //     e.preventDefault();
         //     $("#noRecords").removeClass('hidden');
@@ -67,19 +69,28 @@ $(document).ready(()=>{
         }
     }
 
+    // creating value of chosen charge
+    let charge = "";
+
     // checks if a pet or plant is chosen
     function checkChoose(){
         if($("input[type=radio]:checked").length > 0) {
             $("#choose").addClass('hidden');  
+            for(let i = 0; i<chosen.length; i++){
+                if(chosen[i].checked){
+                    charge = chosen[i].value;
+                    console.log(charge)
+                    return;
+                }
+            }
         }
         else{
             $("#choose").removeClass('hidden');  
         }
 
-
-        console.log()
     }
 
+    
     // checks if there is a nae typed in the "name" input
     function checkName(){
         let value = name.value;
