@@ -115,8 +115,8 @@ $(document).ready(()=>{
     }
 
     // once all inputs have passed, grabs values of inputs and sends to the server
-    function registerUser(e){
-        event.preventDefault();
+    function registerUser(){
+        // event.preventDefault();
         const userEmail = input.value;
         const userPass = password.value;
         console.log({email: userEmail, password: userPass})
