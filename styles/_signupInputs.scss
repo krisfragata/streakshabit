@@ -47,6 +47,9 @@ $popUp: #C4C4C4;
         color: $promptVal;
         border-radius: 11px 11px 11px 11px;
         width: 70%;
+         ::placeholder{
+             color: $promptVal;
+         }
         // text-color: $textAccPurple;
     } 
     
