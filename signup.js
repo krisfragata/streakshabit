@@ -80,7 +80,7 @@ $(document).ready(()=>{
     // checks if there is a nae typed in the "name" input
     function checkName(){
         let value = name.value;
-       if(name.value == ""){
+       if(name.value == "" || name.value== "Pet/Plant name"){
             $('#name-alert').removeClass('hidden');
         }
         else{
