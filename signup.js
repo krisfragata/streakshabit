@@ -6,10 +6,13 @@ $(document).ready(()=>{
     const chosen = document.getElementsByName('charge');
     const name = document.querySelector('#name');
     
-    
-
-    // selects the title to go back home
-    // $(".left-box").onclick(window.location="index.html" )
+    // an array that holds boolean values of whether or not inputs are valid
+    const validInputs = {
+        email: false,
+        password: false,
+        chosen: false,
+        name: false
+    }
 
     // Execute a function when the user releases a key on the keyboard
     input.addEventListener("keyup", function(e) {
@@ -25,16 +28,14 @@ $(document).ready(()=>{
     // when signup button is clicked, check if it is a valid email,
     signup.addEventListener('click', (e)=>{
         e.preventDefault();
-        isEmail();
-        passwordCheck();
-        checkChoose();
-        checkName();
+        validInputs['email'] = isEmail();
+        validInputs['password'] = passwordCheck();
+        validInputs['chosen'] = checkChoose();
+        validInputs['name'] = checkName();
+        if(!areInputsValid())return;
+        registerUser();
 
-        // if(!emailCheck()){
-        //     e.preventDefault();
-        //     $("#noRecords").removeClass('hidden');
-        // }
-
+        console.log(validInputs);
     })
 
     // checks if user input is a valid email address
@@ -53,19 +54,16 @@ $(document).ready(()=>{
 
     }
 
-    // function to check if email is in registry
-    function areInputsValid(){
-        return false;
-    }
-
     // password checks
     function passwordCheck(){
         const passRqmt = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
         if(!(password.value.match(passRqmt))){
             $("#weakPass").removeClass('hidden');
+            return false;
         }
         else{
             $('#weakPass').addClass('hidden');
+            return true;
         }
     }
 
@@ -80,12 +78,13 @@ $(document).ready(()=>{
                 if(chosen[i].checked){
                     charge = chosen[i].value;
                     console.log(charge)
-                    return;
+                    return true;
                 }
             }
         }
         else{
             $("#choose").removeClass('hidden');  
+            return false;
         }
 
     }
@@ -96,9 +95,30 @@ $(document).ready(()=>{
         let value = name.value;
        if(name.value == "" || name.value== "Pet/Plant name"){
             $('#name-alert').removeClass('hidden');
+            return false
         }
         else{
             $('#name-alert').addClass('hidden');
+            return true;
         }
+    }
+
+    // checks if all inputs are valid
+    function areInputsValid(){
+        let inputs = Object.values(validInputs);
+        for(let i = 0; i<inputs.length; i++){
+            if(inputs[i] == false)return false;
+        }
+        // console.log(true);
+        return true;
+        // console.log(inputs)
+    }
+
+    // once all inputs have passed, grabs values of inputs and sends to the server
+    function registerUser(e){
+        event.preventDefault();
+        const userEmail = input.value;
+        const userPass = password.value;
+        console.log({email: userEmail, password: userPass})
     }
 });
