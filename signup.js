@@ -5,6 +5,7 @@ $(document).ready(()=>{
     const  password = document.querySelector("#password");
     const chosen = document.getElementsByName('charge');
     const name = document.querySelector('#name');
+    const form = document.querySelector(".reg-form");
     
     // an array that holds boolean values of whether or not inputs are valid
     const validInputs = {
@@ -35,7 +36,6 @@ $(document).ready(()=>{
         if(!areInputsValid())return;
         registerUser();
 
-        console.log(validInputs);
     })
 
     // checks if user input is a valid email address
@@ -115,10 +115,28 @@ $(document).ready(()=>{
     }
 
     // once all inputs have passed, grabs values of inputs and sends to the server
-    function registerUser(e){
-        event.preventDefault();
+    async function registerUser(){
+        // e.preventDefault();
         const userEmail = input.value;
         const userPass = password.value;
-        console.log({email: userEmail, password: userPass})
+        const chosenCharge = charge;
+        const chargeName = name.value;
+        console.log(validInputs);
+        // console.log({email: userEmail, password: userPass})
+
+        const result = await fetch('/api/register',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: userEmail,
+                password: userPass,
+                charge: chosenCharge,
+                chargeName: chargeName
+            })
+        }).then((res) => res.json())
+        console.log(result);
+
     }
 });
