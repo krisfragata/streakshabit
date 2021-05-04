@@ -3,7 +3,7 @@ $(document).ready(()=>{
     const signup = document.querySelector("#signup");
     const input = document.querySelector('#user-email');
     const  password = document.querySelector("#password");
-    const choose = document.querySelector('#choose');
+    const chosen = document.getElementById('reg-form');
     const name = document.querySelector('#name');
     
 
@@ -52,7 +52,7 @@ $(document).ready(()=>{
     }
 
     // function to check if email is in registry
-    function emailCheck(){
+    function areInputsValid(){
         return false;
     }
 
@@ -75,6 +75,9 @@ $(document).ready(()=>{
         else{
             $("#choose").removeClass('hidden');  
         }
+
+
+        console.log()
     }
 
     // checks if there is a nae typed in the "name" input
