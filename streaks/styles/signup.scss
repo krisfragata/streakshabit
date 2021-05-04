@@ -5,44 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-$mainPurple: #463C6F;
-$sunset: #f5bd89;
-$accentPurple: #D7D0F1;
-$titleOrange: #DAA270;
-$textAccPurple: #A195D6;
-$promptVal: #FBF3E5;
-$mainFont: "Press Start 2p";
-$smallText: "Ubuntu";
-$popUp:"rgba(196, 196, 196, 0.2)";
+
 
 
 // file extension imports
 @import './signupInputs';
+@import './style.css';
 
 
 
 // font variables
 
-@mixin rectangle($width, $height, $color, $direction, $justify){
-    width: $width;
-    height: $height;
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    background-color: $color;
-}
-
-@mixin popup{
-    // width: 100%;
-    // height: 100%;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: $popUp;
-    font-family: $smallText;
-    font-size: 10px;
-}
 
 body{
     width: 100vw;
