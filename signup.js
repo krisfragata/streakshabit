@@ -119,6 +119,8 @@ $(document).ready(()=>{
         // event.preventDefault();
         const userEmail = input.value;
         const userPass = password.value;
+        const chosenCharge = charge;
+        const chargeName = name.value;
         console.log({email: userEmail, password: userPass})
     }
 });
