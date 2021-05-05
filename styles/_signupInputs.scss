@@ -49,6 +49,9 @@
         color: $promptVal;
         border-radius: 11px 11px 11px 11px;
         width: 70%;
+        &[type="radio"] {
+            width: 10%;
+        }
         // text-color: $textAccPurple;
     } 
     

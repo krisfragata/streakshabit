@@ -2,6 +2,11 @@ window.addEventListener("load", function(event) {
 
     "use strict";
   
+    // variables
+    const start = document.querySelector('#startGameBtn');
+    const prompt = document.querySelector('.prompt')
+
+
         ///////////////////
       //// FUNCTIONS ////
     ///////////////////
@@ -39,13 +44,19 @@ window.addEventListener("load", function(event) {
   
           ////////////////////
         //// INITIALIZE ////
-      ////////////////////
+    //   ////////////////////
   
       window.addEventListener("resize",  display.handleResize);
       window.addEventListener("keydown", controller.handleKeyDownUp);
       window.addEventListener("keyup",   controller.handleKeyDownUp);
+
+      start.addEventListener('click', ()=>{
+        display.resize();
+        engine.start();
   
-      display.resize();
-      engine.start();
+        prompt.style.display = 'none';
+
+      })
+      
   
   });

@@ -3,6 +3,7 @@ $canvasOrange: #c5935a;
 // imports scss
 // @import './style.scss';
 @import './style.scss';
+@import './signupInputs';
 
 
 
@@ -33,6 +34,25 @@ body{
            background-color: $canvasOrange;
            width: 90%;
            height: 90%;
+           z-index: 1;
+       }
+       .prompt{
+            @include rectangle(27%, 22%, $mainPurple, row, center);
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            border-radius: 11px 11px 11px 11px;
+            box-shadow: 5px 5px 2px 2px #503b1b;
+            z-index: 3;
+            button{
+                font-family: $sunset;
+                font-size: 18px;
+                border-radius: 11px 11px 11px 11px;
+                border-color: $sunset;
+                border-width: medium;
+                background-color: $textAccPurple;
+                @include hoverPoint();
+            }
 
        }
 

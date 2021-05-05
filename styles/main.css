@@ -3,7 +3,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-@use './inputs';
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sancreek&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+.signUpContainer {
+  margin: 5rem;
+  margin-left: 88px;
+  padding: 4rem;
+  font-family: "Ubuntu";
+}
+
+.signUpContainer h5 {
+  color: #463C6F;
+  font-family: "Press Start 2p";
+  font-size: 20px;
+  padding-top: -2rem;
+  padding-bottom: 2rem;
+}
+
+.signUpContainer input {
+  font-family: "Ubuntu";
+  font-size: 10px;
+  background-color: #f5bd89;
+  border-width: thin;
+  border-color: #463C6F;
+  color: #FBF3E5;
+  border-radius: 11px 11px 11px 11px;
+  width: 70%;
+}
+
+.signUpContainer label {
+  font-family: "Ubuntu";
+  font-size: 10px;
+  color: #463C6F;
+}
+
+.signUpContainer #next {
+  border-width: medium;
+  background-color: #463C6F;
+}
+
+.signUpContainer #next:hover {
+  cursor: pointer;
+}
+
+.signUpContainer .hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -109,6 +161,205 @@ body {
   margin: 2px;
 }
 
+.signUpContainer {
+  margin: 5rem;
+  margin-left: 88px;
+  padding: 4rem;
+  font-family: "Ubuntu";
+}
+
+.signUpContainer h5 {
+  color: #463C6F;
+  font-family: "Press Start 2p";
+  font-size: 20px;
+  padding-top: -2rem;
+  padding-bottom: 2rem;
+}
+
+.signUpContainer input {
+  font-family: "Ubuntu";
+  font-size: 10px;
+  background-color: #f5bd89;
+  border-width: thin;
+  border-color: #463C6F;
+  color: #FBF3E5;
+  border-radius: 11px 11px 11px 11px;
+  width: 70%;
+}
+
+.signUpContainer label {
+  font-family: "Ubuntu";
+  font-size: 10px;
+  color: #463C6F;
+}
+
+.signUpContainer #next {
+  border-width: medium;
+  background-color: #463C6F;
+}
+
+.signUpContainer #next:hover {
+  cursor: pointer;
+}
+
+.signUpContainer .hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #463C6F;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.container {
+  width: 967px;
+  height: 547px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-color: #f5bd89;
+  position: relative;
+  border-radius: 21px 21px 21px 56px;
+  -webkit-box-shadow: 13px 13px 2px 2px #30294b;
+          box-shadow: 13px 13px 2px 2px #30294b;
+  place-items: center;
+}
+
+.container .right {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .right h2 {
+  font-size: 40;
+  font-family: Signica, sans-serif;
+  color: #463C6F;
+}
+
+.container .right .popup {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #C4C4C4;
+  font-family: "Ubuntu";
+  font-size: 10px;
+}
+
+.left {
+  width: 33%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-color: #D7D0F1;
+  border-radius: 0px 0px 0px 56px;
+}
+
+.left .box {
+  top: 50%;
+  margin: 3rem;
+  padding-top: 5rem;
+  height: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left .box h1 {
+  font-size: 15px;
+  color: #463C6F;
+  font-family: "Ubuntu";
+}
+
+.left .box h3 {
+  font-size: 35px;
+  color: #DAA270;
+  font-family: "Press Start 2p", sans-serif;
+  margin: 2px;
+}
+
+.signUpContainer {
+  margin: 5rem;
+  margin-left: 88px;
+  padding: 4rem;
+  font-family: "Ubuntu";
+}
+
+.signUpContainer h5 {
+  color: #463C6F;
+  font-family: "Press Start 2p";
+  font-size: 20px;
+  padding-top: -2rem;
+  padding-bottom: 2rem;
+}
+
+.signUpContainer input {
+  font-family: "Ubuntu";
+  font-size: 10px;
+  background-color: #f5bd89;
+  border-width: thin;
+  border-color: #463C6F;
+  color: #FBF3E5;
+  border-radius: 11px 11px 11px 11px;
+  width: 70%;
+}
+
+.signUpContainer input[type="radio"] {
+  width: 10%;
+}
+
+.signUpContainer #signup {
+  border-width: medium;
+  background-color: #463C6F;
+}
+
+.signUpContainer #signup:hover {
+  cursor: pointer;
+}
+
+.signUpContainer .hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -170,6 +421,45 @@ body {
   background-color: #c5935a;
   width: 90%;
   height: 90%;
+  z-index: 1;
+}
+
+.container .right .prompt {
+  width: 27%;
+  height: 22%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #463C6F;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  border-radius: 11px 11px 11px 11px;
+  -webkit-box-shadow: 5px 5px 2px 2px #503b1b;
+          box-shadow: 5px 5px 2px 2px #503b1b;
+  z-index: 3;
+}
+
+.container .right .prompt button {
+  font-family: #f5bd89;
+  font-size: 18px;
+  border-radius: 11px 11px 11px 11px;
+  border-color: #f5bd89;
+  border-width: medium;
+  background-color: #A195D6;
+}
+
+.container .right .prompt button:hover {
+  cursor: pointer;
 }
 
 .left {
