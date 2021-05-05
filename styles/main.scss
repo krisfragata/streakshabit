@@ -1,20 +1,9 @@
-// font imports
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+$canvasOrange: #c5935a;
 
-
-
-
-// file extension imports
-@import './signupInputs';
+// imports scss
+// @import './style.scss';
 @import './style.scss';
 
-
-
-// font variables
 
 
 body{
@@ -31,21 +20,22 @@ body{
 
 // containers and whatnot
 .container{
-    @include rectangle(967px, 547px, $sunset, row, left);
+    @include rectangle(967px, 547px, $sunset, row, center);
     position: relative;
     border-radius: 21px 21px 21px 56px;
     box-shadow: 13px 13px 2px 2px #30294b;
     place-items: center;
     .right{
-        flex-direction: column;
-        h2{
-            font-size: 17px;
-            font-family: $smallText, sans-serif;
-            color: $mainPurple;
-        } 
-        .popup{
-            @include popup();
-        }
+        @include rectangle(67%, 100%, $sunset, row, right);
+        justify-content: center;
+        align-items: center;
+       canvas{
+           background-color: $canvasOrange;
+           width: 90%;
+           height: 90%;
+
+       }
+
               
     }
     // left: 20%;
@@ -80,3 +70,4 @@ body{
             // }
         }
 }
+

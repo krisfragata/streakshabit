@@ -108,4 +108,107 @@ body {
   font-family: "Press Start 2p", sans-serif;
   margin: 2px;
 }
-/*# sourceMappingURL=style.css.map */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #463C6F;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.container {
+  width: 967px;
+  height: 547px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5bd89;
+  position: relative;
+  border-radius: 21px 21px 21px 56px;
+  -webkit-box-shadow: 13px 13px 2px 2px #30294b;
+          box-shadow: 13px 13px 2px 2px #30294b;
+  place-items: center;
+}
+
+.container .right {
+  width: 67%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  background-color: #f5bd89;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .right canvas {
+  background-color: #c5935a;
+  width: 90%;
+  height: 90%;
+}
+
+.left {
+  width: 33%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-color: #D7D0F1;
+  border-radius: 0px 0px 0px 56px;
+}
+
+.left .box {
+  top: 50%;
+  margin: 3rem;
+  padding-top: 5rem;
+  height: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.left .box h1 {
+  font-size: 15px;
+  color: #463C6F;
+  font-family: "Ubuntu";
+}
+
+.left .box h3 {
+  font-size: 35px;
+  color: #DAA270;
+  font-family: "Press Start 2p", sans-serif;
+  margin: 2px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -13,9 +13,11 @@ $textAccPurple: #A195D6;
 $promptVal: #FBF3E5;
 $mainFont: "Press Start 2p";
 $smallText: "Ubuntu";
+$popUp: #C4C4C4;
+
 
 // file extension imports
-@import './inputs';
+@use './inputs';
 
 
 
@@ -47,6 +49,10 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: $mainPurple;
+    align-content:center;
+    align-items:space-around;
+    display:grid;
+    justify-items:center;
 }
 
 
@@ -54,7 +60,7 @@ body{
 // containers and whatnot
 .container{
     @include rectangle(967px, 547px, $sunset, row, left);
-    position: absolute;
+    position: relative;
     border-radius: 21px 21px 21px 56px;
     box-shadow: 13px 13px 2px 2px #30294b;
     place-items: center;

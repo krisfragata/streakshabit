@@ -13,58 +13,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-.signUpContainer {
-  margin: 5rem;
-  margin-left: 88px;
-  padding: 4rem;
-  font-family: "Ubuntu";
-}
-
-.signUpContainer h5 {
-  color: #463C6F;
-  font-family: "Press Start 2p";
-  font-size: 20px;
-  padding-top: -2rem;
-  padding-bottom: 2rem;
-}
-
-.signUpContainer input {
-  font-family: "Ubuntu";
-  font-size: 10px;
-  background-color: #f5bd89;
-  border-width: thin;
-  border-color: #463C6F;
-  color: #FBF3E5;
-  border-radius: 11px 11px 11px 11px;
-  width: 70%;
-}
-
-.signUpContainer label {
-  font-family: "Ubuntu";
-  font-size: 10px;
-  color: #463C6F;
-}
-
-.signUpContainer #next {
-  border-width: medium;
-  background-color: #463C6F;
-}
-
-.signUpContainer #next:hover {
-  cursor: pointer;
-}
-
-.signUpContainer .hidden {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
+@use './inputs';
 body {
   width: 100vw;
   height: 100vh;
   background-color: #463C6F;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
 }
 
 .container {
@@ -81,7 +42,7 @@ body {
       -ms-flex-pack: left;
           justify-content: left;
   background-color: #f5bd89;
-  position: absolute;
+  position: relative;
   border-radius: 21px 21px 21px 56px;
   -webkit-box-shadow: 13px 13px 2px 2px #30294b;
           box-shadow: 13px 13px 2px 2px #30294b;
@@ -200,58 +161,19 @@ body {
   overflow: hidden;
 }
 
-.signUpContainer {
-  margin: 5rem;
-  margin-left: 88px;
-  padding: 4rem;
-  font-family: "Ubuntu";
-}
-
-.signUpContainer h5 {
-  color: #463C6F;
-  font-family: "Press Start 2p";
-  font-size: 20px;
-  padding-top: -2rem;
-  padding-bottom: 2rem;
-}
-
-.signUpContainer input {
-  font-family: "Ubuntu";
-  font-size: 10px;
-  background-color: #f5bd89;
-  border-width: thin;
-  border-color: #463C6F;
-  color: #FBF3E5;
-  border-radius: 11px 11px 11px 11px;
-  width: 70%;
-}
-
-.signUpContainer label {
-  font-family: "Ubuntu";
-  font-size: 10px;
-  color: #463C6F;
-}
-
-.signUpContainer #next {
-  border-width: medium;
-  background-color: #463C6F;
-}
-
-.signUpContainer #next:hover {
-  cursor: pointer;
-}
-
-.signUpContainer .hidden {
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
+@use './inputs';
 body {
   width: 100vw;
   height: 100vh;
   background-color: #463C6F;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
 }
 
 .container {
@@ -268,7 +190,7 @@ body {
       -ms-flex-pack: left;
           justify-content: left;
   background-color: #f5bd89;
-  position: absolute;
+  position: relative;
   border-radius: 21px 21px 21px 56px;
   -webkit-box-shadow: 13px 13px 2px 2px #30294b;
           box-shadow: 13px 13px 2px 2px #30294b;
@@ -349,6 +271,14 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #463C6F;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
 }
 
 .container {
@@ -365,7 +295,7 @@ body {
       -ms-flex-pack: left;
           justify-content: left;
   background-color: #f5bd89;
-  position: absolute;
+  position: relative;
   border-radius: 21px 21px 21px 56px;
   -webkit-box-shadow: 13px 13px 2px 2px #30294b;
           box-shadow: 13px 13px 2px 2px #30294b;
