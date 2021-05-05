@@ -130,7 +130,9 @@ $(document).ready(()=>{
         const result = fetch('/api/register', {
             method: 'POST',
             headers:{
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                "Access-Control-Allow-Origin" : "*", 
+                "Access-Control-Allow-Credentials" : true 
             },
             body: JSON.stringify({
                 userEmail,
@@ -138,7 +140,8 @@ $(document).ready(()=>{
                 chosenCharge,
                 chargeName
             })
-        }).then(res => res.json())
+        }).then(res => res.text())
+        .then(data => console.log(data))
         
     }
 });
