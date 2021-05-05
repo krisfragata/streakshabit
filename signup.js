@@ -122,5 +122,19 @@ $(document).ready(()=>{
         const chosenCharge = charge;
         const chargeName = name.value;
         console.log({email: userEmail, password: userPass})
+
+        fetch('/api/register', {
+            method: 'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                userEmail,
+                userPass,
+                chosenCharge,
+                chargeName
+            })
+        }).then(res => res.json())
+        
     }
 });
