@@ -120,5 +120,6 @@ $(document).ready(()=>{
         const userEmail = input.value;
         const userPass = password.value;
         console.log({email: userEmail, password: userPass})
+        window.open('main.html')
     }
 });
