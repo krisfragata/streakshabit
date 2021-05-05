@@ -72,6 +72,9 @@ $(document).ready(()=>{
 
     // checks if a pet or plant is chosen
     function checkChoose(){
+        const pet = document.querySelector("#pet");
+        const plant = document.querySelector("#plant");
+
         if($("input[type=radio]:checked").length > 0) {
             $("#choose").addClass('hidden');  
             for(let i = 0; i<chosen.length; i++){
@@ -81,6 +84,7 @@ $(document).ready(()=>{
                     return true;
                 }
             }
+            // if(pet.checked)
         }
         else{
             $("#choose").removeClass('hidden');  
@@ -115,7 +119,7 @@ $(document).ready(()=>{
     }
 
     // once all inputs have passed, grabs values of inputs and sends to the server
-    function registerUser(){
+    async function registerUser(){
         // event.preventDefault();
         const userEmail = input.value;
         const userPass = password.value;
@@ -123,7 +127,7 @@ $(document).ready(()=>{
         const chargeName = name.value;
         console.log({email: userEmail, password: userPass})
 
-        fetch('/api/register', {
+        const result = fetch('/api/register', {
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json'
