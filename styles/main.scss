@@ -1,4 +1,4 @@
-$canvasOrange: #c5935a;
+$canvasOrange: rgb(197, 147, 90);
 
 // imports scss
 // @import './style.scss';
@@ -31,9 +31,9 @@ body{
         justify-content: center;
         align-items: center;
        canvas{
-           background-color: $canvasOrange;
-           width: 90%;
-           height: 90%;
+        //    background-color: $canvasOrange;
+        //    width: 90%;
+        //    height: 90%;
            z-index: 1;
        }
        .prompt{
