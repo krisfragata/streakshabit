@@ -7,6 +7,7 @@
 // $mainFont: "Press Start 2p";
 
 // mixin functions
+
 @mixin rectangle($width, $height, $color, $direction, $justify){
     width: $width;
     height: $height;
@@ -45,8 +46,9 @@
         border-color: $mainPurple;
         color: $promptVal;
         border-radius: 11px 11px 11px 11px;
-        width: 70%;
-        
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
         // text-color: $textAccPurple;
       
         
@@ -90,6 +92,8 @@
         width: 0;
         height: 0;
         overflow: hidden;
+        margin: 0;
+
     }
     
 }

@@ -65,12 +65,14 @@ body{
         font-size: 15px;
         color: $mainPurple;
         font-family: $smallText;
+        text-transform: uppercase;
         }
         h3{
             font-size: 35px;
             color: $titleOrange;
             font-family: $mainFont, sans-serif;
-            margin: 2px;
+            margin: 50px 2px;
+            line-height: 2.75rem;
         }
         // h4{
         //     font-size: 12px;

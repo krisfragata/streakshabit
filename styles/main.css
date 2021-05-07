@@ -31,7 +31,9 @@
   border-color: #473d71;
   color: #FBF3E5;
   border-radius: 11px 11px 11px 11px;
-  width: 70%;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .signUpContainer label {
@@ -54,6 +56,7 @@
   width: 0;
   height: 0;
   overflow: hidden;
+  margin: 0;
 }
 
 body {
@@ -68,6 +71,7 @@ body {
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  margin: 0;
 }
 
 .container {
@@ -105,7 +109,7 @@ body {
 }
 
 .container .right .popup {
-  margin: 1rem;
+  margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,7 +122,11 @@ body {
           justify-content: center;
   background-color: #C4C4C4;
   font-family: "Ubuntu";
-  font-size: 10px;
+  font-size: 16px;
+}
+
+.container .right .popup a {
+  color: #9c27b0;
 }
 
 .left {
@@ -152,13 +160,15 @@ body {
   font-size: 15px;
   color: #473d71;
   font-family: "Ubuntu";
+  text-transform: uppercase;
 }
 
 .left .box h3 {
   font-size: 35px;
   color: #DAA270;
   font-family: "Press Start 2p", sans-serif;
-  margin: 2px;
+  margin: 50px 2px;
+  line-height: 2.75rem;
 }
 
 .signUpContainer {
@@ -184,7 +194,9 @@ body {
   border-color: #473d71;
   color: #FBF3E5;
   border-radius: 11px 11px 11px 11px;
-  width: 70%;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .signUpContainer label {
@@ -207,6 +219,7 @@ body {
   width: 0;
   height: 0;
   overflow: hidden;
+  margin: 0;
 }
 
 body {
@@ -221,6 +234,7 @@ body {
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  margin: 0;
 }
 
 .container {
@@ -258,7 +272,7 @@ body {
 }
 
 .container .right .popup {
-  margin: 1rem;
+  margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,7 +285,11 @@ body {
           justify-content: center;
   background-color: #C4C4C4;
   font-family: "Ubuntu";
-  font-size: 10px;
+  font-size: 16px;
+}
+
+.container .right .popup a {
+  color: #9c27b0;
 }
 
 .left {
@@ -305,13 +323,15 @@ body {
   font-size: 15px;
   color: #473d71;
   font-family: "Ubuntu";
+  text-transform: uppercase;
 }
 
 .left .box h3 {
   font-size: 35px;
   color: #DAA270;
   font-family: "Press Start 2p", sans-serif;
-  margin: 2px;
+  margin: 50px 2px;
+  line-height: 2.75rem;
 }
 
 .signUpContainer {
@@ -342,6 +362,7 @@ body {
 
 .signUpContainer input[type="radio"] {
   width: 10%;
+  font-size: 12pt;
 }
 
 .signUpContainer #signup {
@@ -358,6 +379,11 @@ body {
   width: 0;
   height: 0;
   overflow: hidden;
+  margin: 0;
+}
+
+.signUpContainer label {
+  font: 12pt;
 }
 
 body {
@@ -372,6 +398,7 @@ body {
   display: -ms-grid;
   display: grid;
   justify-items: center;
+  margin: 0;
 }
 
 .container {
@@ -422,36 +449,23 @@ body {
 }
 
 .container .right .prompt {
-  width: 27%;
-  height: 22%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #A195D6;
-  justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  border-radius: 11px 11px 11px 11px;
-  -webkit-box-shadow: 5px 5px 2px 2px #503b1b;
-          box-shadow: 5px 5px 2px 2px #503b1b;
   z-index: 3;
 }
 
 .container .right .prompt button {
   font-family: #f5bd89;
-  font-size: 18px;
-  border-radius: 11px 11px 11px 11px;
-  border-color: #f5bd89;
-  border-width: medium;
+  font-size: 18pt;
+  padding: 15px 25px;
+  border-radius: 25px;
+  border-color: #9c27b0;
+  border-width: 5px;
   background-color: #D7D0F1;
 }
 
@@ -490,12 +504,14 @@ body {
   font-size: 15px;
   color: #473d71;
   font-family: "Ubuntu";
+  text-transform: uppercase;
 }
 
 .left .box h3 {
   font-size: 35px;
   color: #DAA270;
   font-family: "Press Start 2p", sans-serif;
-  margin: 2px;
+  margin: 50px 2px;
+  line-height: 2.75rem;
 }
 /*# sourceMappingURL=main.css.map */
