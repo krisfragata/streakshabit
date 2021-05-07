@@ -9,3 +9,11 @@ https://www.figma.com/file/gGk3VFf9nvAc7YduYbFgxh/streaks-wireframes?node-id=0%3
 
 <img width="683" alt="Screen Shot 2021-05-07 at 10 48 04 AM" src="https://user-images.githubusercontent.com/79350471/117478700-1b345f80-af25-11eb-9738-95257725ed79.png">
 
+current functionality 5/7/21
+* currently, user can sign up and register but nothing is saved server side. Currently learning how to implement MongooseDB and node.js to have log in functionality
+* after registration, user can click "start game" and as of now, player is simply a square box that can move left to right and jump using the A, D and Space-bar respectively.
+* code was inspired by Frank Poth in his platform-game in javascript tutorials on Youtube -- https://www.youtube.com/watch?v=opiWzi0KWjs
+* I wish to recreate his game engine and have disected his code to determine its elements and purpose
+* 
+[game engine disection 5-5-21.pdf](https://github.com/krisfragata/streakshabit/files/6443029/game.engine.disection.5-5-21.pdf)
+
