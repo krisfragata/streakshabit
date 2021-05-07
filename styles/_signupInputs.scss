@@ -1,5 +1,4 @@
 // variables
-$popUp: #C4C4C4;
 
 // font import
 // @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
@@ -43,13 +42,16 @@ $popUp: #C4C4C4;
 
     input{
         font-family: $smallText;
-        font-size: 10px;
+        font-size: 16px;
         background-color: $sunset;
         border-width: thin;
         border-color: $mainPurple;
         color: $promptVal;
         border-radius: 11px 11px 11px 11px;
         width: 70%;
+        &[type="radio"] {
+            width: 10%;
+        }
         // text-color: $textAccPurple;
     } 
     
@@ -59,6 +61,8 @@ $popUp: #C4C4C4;
         background-color: $mainPurple;
         @include hoverPoint();
     }
+
+    
 
    
     // hides elements

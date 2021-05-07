@@ -11,7 +11,7 @@
 }
 
 .signUpContainer h5 {
-  color: #463C6F;
+  color: #473d71;
   font-family: "Press Start 2p";
   font-size: 20px;
   padding-top: -2rem;
@@ -20,10 +20,10 @@
 
 .signUpContainer input {
   font-family: "Ubuntu";
-  font-size: 10px;
+  font-size: 16px;
   background-color: #f5bd89;
   border-width: thin;
-  border-color: #463C6F;
+  border-color: #473d71;
   color: #FBF3E5;
   border-radius: 11px 11px 11px 11px;
   width: 70%;
@@ -32,47 +32,15 @@
 .signUpContainer label {
   font-family: "Ubuntu";
   font-size: 10px;
-  color: #463C6F;
+  color: #473d71;
 }
 
 .signUpContainer #next {
   border-width: medium;
-  background-color: #463C6F;
+  background-color: #473d71;
 }
 
 .signUpContainer #next:hover {
-  cursor: pointer;
-}
-
-.signUpContainer #notEmail, .signUpContainer #norecords {
-  width: 300px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #C4C4C4;
-  margin: 3rem;
-}
-
-.signUpContainer #notEmail p, .signUpContainer #norecords p {
-  font-size: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.signUpContainer #norecords a {
-  font-size: 10px;
-}
-
-.signUpContainer #norecords a:hover {
   cursor: pointer;
 }
 
@@ -86,7 +54,15 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #463C6F;
+  background-color: #473d71;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
 }
 
 .container {
@@ -103,7 +79,7 @@ body {
       -ms-flex-pack: left;
           justify-content: left;
   background-color: #f5bd89;
-  position: absolute;
+  position: relative;
   border-radius: 21px 21px 21px 56px;
   -webkit-box-shadow: 13px 13px 2px 2px #30294b;
           box-shadow: 13px 13px 2px 2px #30294b;
@@ -120,7 +96,24 @@ body {
 .container .right h2 {
   font-size: 40;
   font-family: Signica, sans-serif;
-  color: #463C6F;
+  color: #473d71;
+}
+
+.container .right .popup {
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #C4C4C4;
+  font-family: "Ubuntu";
+  font-size: 16px;
 }
 
 .left {
@@ -152,7 +145,7 @@ body {
 
 .left .box h1 {
   font-size: 15px;
-  color: #463C6F;
+  color: #473d71;
   font-family: "Ubuntu";
 }
 

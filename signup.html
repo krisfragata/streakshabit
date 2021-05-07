@@ -40,13 +40,13 @@
               <div class="popup hidden" id="name-alert">
                   <p>please name your pet/plant!</p>
               </div>
-              <form class="reg-form">
-                <input type="email" id="user-email" onfocus="this.value=''" placeholder="Your e-mail address" required>
+              <form class="reg-form" >
+                <input type="email" id="user-email" onfocus="this.value=''" value="" placeholder="" required>
                 <input type="password" id="password" onfocus="this.value=''" placeholder="Password" required>
-                <h2>I will raise a:</h1>
-                <input type="radio" name="charge" placeholder="pet">
+                <h2>type of player:</h1>
+                <input type="radio" name="charge" value="pet">
                 <label for="pet">Pet</label>
-                <input type="radio" name="charge" placeholder="plant">
+                <input type="radio" name="charge" value="plant">
                 <label for="pet">Plant</label>
                 <input type="text" id="name" onfocus="this.value=''" placeholder="Pet/Plant name" required>
                 <input class="button" id="signup" type="submit" placeholder="signup">
