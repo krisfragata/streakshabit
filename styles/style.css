@@ -20,7 +20,7 @@
 
 .signUpContainer input {
   font-family: "Ubuntu";
-  font-size: 10px;
+  font-size: 16px;
   background-color: #f5bd89;
   border-width: thin;
   border-color: #473d71;
@@ -113,7 +113,7 @@ body {
           justify-content: center;
   background-color: #C4C4C4;
   font-family: "Ubuntu";
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .left {

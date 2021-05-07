@@ -37,7 +37,7 @@ body{
            z-index: 1;
        }
        .prompt{
-            @include rectangle(27%, 22%, $mainPurple, row, center);
+            @include rectangle(27%, 22%, $textAccPurple, row, center);
             justify-content: center;
             align-items: center;
             position: absolute;
@@ -50,7 +50,7 @@ body{
                 border-radius: 11px 11px 11px 11px;
                 border-color: $sunset;
                 border-width: medium;
-                background-color: $textAccPurple;
+                background-color: $accentPurple;
                 @include hoverPoint();
             }
 

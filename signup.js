@@ -6,6 +6,15 @@ $(document).ready(()=>{
     const chosen = document.getElementsByName('charge');
     const name = document.querySelector('#name');
     
+    // transfers email from last page and adds it as value for email on form
+    window.addEventListener('load', ()=>{
+        let emailInput = localStorage.getItem('emailInput');
+        console.log(emailInput)
+        // $("#user-email").attr('value', emailInput);//
+        input.value = emailInput;
+        input.placeholder = emailInput;
+    })
+
     // an array that holds boolean values of whether or not inputs are valid
     const validInputs = {
         email: false,

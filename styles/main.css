@@ -16,7 +16,7 @@
 }
 
 .signUpContainer h5 {
-  color: #463C6F;
+  color: #473d71;
   font-family: "Press Start 2p";
   font-size: 20px;
   padding-top: -2rem;
@@ -25,10 +25,10 @@
 
 .signUpContainer input {
   font-family: "Ubuntu";
-  font-size: 10px;
+  font-size: 16px;
   background-color: #f5bd89;
   border-width: thin;
-  border-color: #463C6F;
+  border-color: #473d71;
   color: #FBF3E5;
   border-radius: 11px 11px 11px 11px;
   width: 70%;
@@ -37,12 +37,12 @@
 .signUpContainer label {
   font-family: "Ubuntu";
   font-size: 10px;
-  color: #463C6F;
+  color: #473d71;
 }
 
 .signUpContainer #next {
   border-width: medium;
-  background-color: #463C6F;
+  background-color: #473d71;
 }
 
 .signUpContainer #next:hover {
@@ -59,7 +59,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #463C6F;
+  background-color: #473d71;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: space-around;
@@ -101,7 +101,7 @@ body {
 .container .right h2 {
   font-size: 40;
   font-family: Signica, sans-serif;
-  color: #463C6F;
+  color: #473d71;
 }
 
 .container .right .popup {
@@ -150,7 +150,7 @@ body {
 
 .left .box h1 {
   font-size: 15px;
-  color: #463C6F;
+  color: #473d71;
   font-family: "Ubuntu";
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 .signUpContainer h5 {
-  color: #463C6F;
+  color: #473d71;
   font-family: "Press Start 2p";
   font-size: 20px;
   padding-top: -2rem;
@@ -178,10 +178,10 @@ body {
 
 .signUpContainer input {
   font-family: "Ubuntu";
-  font-size: 10px;
+  font-size: 16px;
   background-color: #f5bd89;
   border-width: thin;
-  border-color: #463C6F;
+  border-color: #473d71;
   color: #FBF3E5;
   border-radius: 11px 11px 11px 11px;
   width: 70%;
@@ -190,12 +190,12 @@ body {
 .signUpContainer label {
   font-family: "Ubuntu";
   font-size: 10px;
-  color: #463C6F;
+  color: #473d71;
 }
 
 .signUpContainer #next {
   border-width: medium;
-  background-color: #463C6F;
+  background-color: #473d71;
 }
 
 .signUpContainer #next:hover {
@@ -212,7 +212,7 @@ body {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #463C6F;
+  background-color: #473d71;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: space-around;
@@ -254,7 +254,7 @@ body {
 .container .right h2 {
   font-size: 40;
   font-family: Signica, sans-serif;
-  color: #463C6F;
+  color: #473d71;
 }
 
 .container .right .popup {
@@ -303,7 +303,7 @@ body {
 
 .left .box h1 {
   font-size: 15px;
-  color: #463C6F;
+  color: #473d71;
   font-family: "Ubuntu";
 }
 
@@ -322,7 +322,7 @@ body {
 }
 
 .signUpContainer h5 {
-  color: #463C6F;
+  color: #473d71;
   font-family: "Press Start 2p";
   font-size: 20px;
   padding-top: -2rem;
@@ -331,10 +331,10 @@ body {
 
 .signUpContainer input {
   font-family: "Ubuntu";
-  font-size: 10px;
+  font-size: 16px;
   background-color: #f5bd89;
   border-width: thin;
-  border-color: #463C6F;
+  border-color: #473d71;
   color: #FBF3E5;
   border-radius: 11px 11px 11px 11px;
   width: 70%;
@@ -346,7 +346,7 @@ body {
 
 .signUpContainer #signup {
   border-width: medium;
-  background-color: #463C6F;
+  background-color: #473d71;
 }
 
 .signUpContainer #signup:hover {
@@ -363,7 +363,7 @@ body {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #463C6F;
+  background-color: #473d71;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: space-around;
@@ -418,9 +418,6 @@ body {
 }
 
 .container .right canvas {
-  background-color: #c5935a;
-  width: 90%;
-  height: 90%;
   z-index: 1;
 }
 
@@ -437,7 +434,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #463C6F;
+  background-color: #A195D6;
   justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -455,7 +452,7 @@ body {
   border-radius: 11px 11px 11px 11px;
   border-color: #f5bd89;
   border-width: medium;
-  background-color: #A195D6;
+  background-color: #D7D0F1;
 }
 
 .container .right .prompt button:hover {
@@ -491,7 +488,7 @@ body {
 
 .left .box h1 {
   font-size: 15px;
-  color: #463C6F;
+  color: #473d71;
   font-family: "Ubuntu";
 }
 
