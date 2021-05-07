@@ -17,3 +17,5 @@ current functionality 5/7/21
 * 
 [game engine disection 5-5-21.pdf](https://github.com/krisfragata/streakshabit/files/6443029/game.engine.disection.5-5-21.pdf)
 
+<img width="1008" alt="Untitled" src="https://user-images.githubusercontent.com/79350471/117479954-90ecfb00-af26-11eb-86dd-d52ca16af001.png">
+<img width="1000" alt="g disection" src="https://user-images.githubusercontent.com/79350471/117480067-bb3eb880-af26-11eb-9386-7f68e7fdf9fd.png">
