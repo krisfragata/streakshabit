@@ -15,6 +15,7 @@ body{
     align-items:space-around;
     display:grid;
     justify-items:center;
+    margin: 0;
 }
 
 
@@ -37,19 +38,20 @@ body{
            z-index: 1;
        }
        .prompt{
-            @include rectangle(27%, 22%, $textAccPurple, row, center);
+            // @include rectangle(27%, 22%, $textAccPurple, row, center);
             justify-content: center;
             align-items: center;
             position: absolute;
-            border-radius: 11px 11px 11px 11px;
-            box-shadow: 5px 5px 2px 2px #503b1b;
+            // border-radius: 11px 11px 11px 11px;
+            // box-shadow: 5px 5px 2px 2px #503b1b;
             z-index: 3;
             button{
                 font-family: $sunset;
-                font-size: 18px;
-                border-radius: 11px 11px 11px 11px;
-                border-color: $sunset;
-                border-width: medium;
+                font-size: 18pt;
+                padding: 15px 25px;
+                border-radius: 25px;
+                border-color: #9c27b0;
+                border-width: 5px;
                 background-color: $accentPurple;
                 @include hoverPoint();
             }
@@ -76,12 +78,14 @@ body{
         font-size: 15px;
         color: $mainPurple;
         font-family: $smallText;
+        text-transform: uppercase;
         }
         h3{
             font-size: 35px;
             color: $titleOrange;
             font-family: $mainFont, sans-serif;
-            margin: 2px;
+            margin: 50px 2px;
+            line-height: 2.75rem;
         }
         // h4{
         //     font-size: 12px;
