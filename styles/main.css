@@ -445,6 +445,8 @@ body {
 }
 
 .container .right canvas {
+  width: 90%;
+  height: 90%;
   z-index: 1;
 }
 
