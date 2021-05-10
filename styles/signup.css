@@ -13,6 +13,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@font-face {
+  font-family: "unknown";
+  src: url("/unknown/TTF/Unknown-RND.ttf");
+}
+
 .signUpContainer {
   margin: 5rem;
   margin-left: 88px;
@@ -23,7 +28,7 @@
 .signUpContainer h5 {
   color: #473d71;
   font-family: "Press Start 2p";
-  font-size: 20px;
+  font-size: 18px;
   padding-top: -2rem;
   padding-bottom: 2rem;
 }
@@ -108,7 +113,7 @@ body {
 }
 
 .container .right h2 {
-  font-size: 40;
+  font-size: 35px;
   font-family: Signica, sans-serif;
   color: #473d71;
 }
@@ -228,6 +233,11 @@ body {
   font: 12pt;
 }
 
+@font-face {
+  font-family: "unknown";
+  src: url("/unknown/TTF/Unknown-RND.ttf");
+}
+
 .signUpContainer {
   margin: 5rem;
   margin-left: 88px;
@@ -238,7 +248,7 @@ body {
 .signUpContainer h5 {
   color: #473d71;
   font-family: "Press Start 2p";
-  font-size: 20px;
+  font-size: 18px;
   padding-top: -2rem;
   padding-bottom: 2rem;
 }
@@ -323,7 +333,7 @@ body {
 }
 
 .container .right h2 {
-  font-size: 40;
+  font-size: 35px;
   font-family: Signica, sans-serif;
   color: #473d71;
 }

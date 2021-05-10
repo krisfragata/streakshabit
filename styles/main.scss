@@ -28,11 +28,18 @@ body{
     box-shadow: 13px 13px 2px 2px #30294b;
     place-items: center;
     .right{
-        @include rectangle(67%, 100%, $sunset, row, right);
+        @include rectangle(100%, 100%, $sunset, row, right);
         justify-content: center;
         align-items: center;
+        h3{
+            font-size: 35px;
+            color: $titleOrange;
+            font-family: $mainFont, sans-serif;
+            // margin:;
+            line-height: 2.75rem;
+        }
        canvas{
-        //    background-color: $canvasOrange;
+           background-color: $canvasOrange;
            width: 90%;
            height: 90%;
            z-index: 1;
@@ -65,33 +72,27 @@ body{
 }
 
 
-.left{
-    @include rectangle(33%, 100%, $accentPurple, column, left);
-    border-radius: 0px 0px 0px 56px;
-    .box{
-        top: 50%;
-        margin: 3rem;
-        padding-top: 5rem;
-        height: 40%;
-        justify-content: center;
-        h1{
-        font-size: 15px;
-        color: $mainPurple;
-        font-family: $smallText;
-        text-transform: uppercase;
-        }
-        h3{
-            font-size: 35px;
-            color: $titleOrange;
-            font-family: $mainFont, sans-serif;
-            margin: 50px 2px;
-            line-height: 2.75rem;
-        }
-        // h4{
-        //     font-size: 12px;
-        //     color: $textAccPurple;
-        //     font-family: Signica, sans-serif;
-            // }
-        }
-}
+// .left{
+//     @include rectangle(33%, 100%, $accentPurple, column, left);
+//     border-radius: 0px 0px 0px 56px;
+//     .box{
+//         top: 50%;
+//         margin: 3rem;
+//         padding-top: 5rem;
+//         height: 40%;
+//         justify-content: center;
+//         h1{
+//         font-size: 15px;
+//         color: $mainPurple;
+//         font-family: $smallText;
+//         text-transform: uppercase;
+//         }
+       
+//         // h4{
+//         //     font-size: 12px;
+//         //     color: $textAccPurple;
+//         //     font-family: Signica, sans-serif;
+//             // }
+//         }
+// }
 

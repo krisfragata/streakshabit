@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@font-face{
+    font-family: "unknown";
+    src: url("/unknown/TTF/Unknown-RND.ttf");
+}
 
 $mainPurple: #473d71;
 $sunset: #f5bd89;
@@ -14,6 +18,7 @@ $promptVal: #FBF3E5;
 $mainFont: "Press Start 2p";
 $smallText: "Ubuntu";
 $popUp: #C4C4C4;
+$unknown: "unknown";
 
 
 // file extension imports
@@ -72,7 +77,7 @@ body{
     .right{
         flex-direction: column;
         h2{
-            font-size: 40;
+            font-size: 35px;
             font-family: Signica, sans-serif;
             color: $mainPurple;
         } 
@@ -110,10 +115,10 @@ body{
         text-transform: uppercase;
         }
         h3{
-            font-size: 35px;
+            font-size: 30px;
             color: $titleOrange;
             font-family: $mainFont, sans-serif;
-            margin: 50px 2px;
+            margin: 55px 2px;
             line-height: 2.75rem;
         }
         // h4{

@@ -48,13 +48,13 @@ Game.prototype = { constructor : Game };
 Game.Player = function(x, y) {
 
   this.color      = "#473d71";
-  this.height     = 16;
+  this.height     = 10;
   this.jumping    = true;
   this.velocityX = 0;
   this.velocityY = 0;
-  this.width      = 16;
+  this.width      = 8;
   this.x          = 100;
-  this.y          = 50;
+  this.y          = 20;
 
 };
 
